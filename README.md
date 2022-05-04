@@ -75,3 +75,21 @@ This web app was generated following these steps.
     config.logger     = ActiveSupport::TaggedLogging.new(logger)
   end
   ```
+5. Swap out the default database config in `config/database.yml`
+  ```yaml
+  default: &default
+  adapter: <%= ENV.fetch("DB_ADAPTER") { "postgresql" } %>
+  encoding: unicode
+  # For details on connection pooling, see Rails configuration guide
+  # https://guides.rubyonrails.org/configuring.html#database-pooling
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  url: <%= ENV['DATABASE_URL'] %>
+  ```
+6. Comment out production database settings in `config/database.yml`
+  ```yaml
+  production:
+  <<: *default
+  #  database: rails6_webapp_quickstart_production
+  #  username: rails6_webapp_quickstart
+  #  password: <%= ENV['RAILS6_WEBAPP_QUICKSTART_DATABASE_PASSWORD'] %>
+  ```
