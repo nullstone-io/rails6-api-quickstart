@@ -32,11 +32,11 @@ Then, visit [http://localhost:3000](http://localhost:3000).
 2. Create a public web app. (Remember `app-name` for later)
 3. Add the postgresql datastore (from step 1) to the app.
 4. Add the `SECRET_KEY_BASE for Rails Cookies` capability to the app.
-6. Provision
+5. Provision
   ```shell
   nullstone up --wait --block=<app-name> --env=<env-name>
   ```
-7. Build, push, and deploy
+6Build, push, and deploy
   ```shell
   docker build -t rails-quickstart .
   nullstone launch --source=rails-quickstart --app=<app-name> --env=<env-name>
@@ -45,7 +45,9 @@ Then, visit [http://localhost:3000](http://localhost:3000).
 ### Hot reload
 
 The `app` in `docker-compose.yml` is configured to automatically reload changes to files.
-You do not need to rebuild/restart the app when making changes to Rails files.
+You do not need to rebuild/restart the app when making changes to your app.
+
+### Update dependencies
 
 However, when updating dependencies, you will need to restart your docker container.
 The dependencies will be installed on boot of the docker container.
