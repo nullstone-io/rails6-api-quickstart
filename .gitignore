@@ -65,3 +65,9 @@ yarn-debug.log*
 # Ignore uploaded files in development
 /storage/*
 !/storage/.keep
+
+# Intellij
+.idea/
+
+# Ignore master key for decrypting credentials and more.
+/config/master.key
