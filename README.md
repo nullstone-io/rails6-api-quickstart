@@ -11,21 +11,6 @@ This quickstart is set up with:
 - Error logs are emitted to stdout for docker builds
 - Hot reload for local development
 
-## Running locally
-
-You can run this project locally inside Docker or using rails alone.
-To use Docker, this project contains `docker-compose.yml` that runs with `RAILS_ENV=development`.
-This ensures that using Docker doesn't prohibit handy development features:
-- Pretty error logs are displayed in the browser.
-- Hot reload is configured so that changes to rails files doesn't require a docker rebuild or restart.
-
-To run using Docker locally, use docker compose:
-```shell
-docker compose up
-```
-
-Then, visit [http://localhost:3000](http://localhost:3000).
-
 ## How to launch via Nullstone
 
 1. Create postgresql datastore.
@@ -41,6 +26,21 @@ Then, visit [http://localhost:3000](http://localhost:3000).
   docker build -t rails-quickstart .
   nullstone launch --source=rails-quickstart --app=<app-name> --env=<env-name>
   ```
+
+## Running locally
+
+You can run this project locally inside Docker or using rails alone.
+To use Docker, this project contains `docker-compose.yml` that runs with `RAILS_ENV=development`.
+This ensures that using Docker doesn't prohibit handy development features:
+- Pretty error logs are displayed in the browser.
+- Hot reload is configured so that changes to rails files doesn't require a docker rebuild or restart.
+
+To run using Docker locally, use docker compose:
+```shell
+docker compose up
+```
+
+Then, visit [http://localhost:3000](http://localhost:3000).
 
 ### Hot reload
 
