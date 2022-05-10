@@ -21,7 +21,7 @@ This quickstart is set up with:
   ```shell
   nullstone up --wait --block=<app-name> --env=<env-name>
   ```
-6Build, push, and deploy
+6. Build, push, and deploy
   ```shell
   docker build -t rails-quickstart .
   nullstone launch --source=rails-quickstart --app=<app-name> --env=<env-name>
