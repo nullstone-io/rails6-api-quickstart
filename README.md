@@ -95,7 +95,7 @@ This web app was generated following these steps.
   ```yaml
   production:
   <<: *default
-  #  database: rails6_webapp_quickstart_production
-  #  username: rails6_webapp_quickstart
-  #  password: <%= ENV['RAILS6_WEBAPP_QUICKSTART_DATABASE_PASSWORD'] %>
+  #  database: rails6_api_quickstart_production
+  #  username: rails6_api_quickstart
+  #  password: <%= ENV['RAILS6_API_QUICKSTART_DATABASE_PASSWORD'] %>
   ```
