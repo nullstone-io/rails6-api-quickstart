@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1
-FROM nullstone/rails
+FROM nullstone/rails:ruby3.1
 
 ENV RAILS_ENV production
 

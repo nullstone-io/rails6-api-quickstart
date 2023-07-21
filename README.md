@@ -59,7 +59,7 @@ docker compose restart app
 ## Details on quickstart
 
 This web app was generated following these steps.
-1. `rails new --database=postgresql --skip-test --api .`
+1. `rails new . --database=postgresql --skip-test --api`
 2. Add the following to `Gemfile`
   ```
   group :test do

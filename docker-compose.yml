@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   app:
-    image: nullstone/rails:local
+    image: nullstone/rails:3.1-local
     volumes:
       - .:/app
       - gems:/usr/local/bundle
