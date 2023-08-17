@@ -2,7 +2,7 @@ version: "0.1"
 
 subdomains:
   rails-api-subdomain:
-    module: nullstone/aws-autogen-subdomain
+    module: nullstone/autogen-aws-subdomain
 
 apps:
   rails-api-quickstart:
